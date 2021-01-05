@@ -15,6 +15,10 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+app.get('/', (req, res) => {
+    res.send("Hello to Memories API");
+});
+
 //const CONNECTION_URL = "MONGO ATLAS URL";
 const PORT = process.env.PORT || 5000;
 
